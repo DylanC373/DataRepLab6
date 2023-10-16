@@ -1,9 +1,9 @@
 // Import necessary libraries and components
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Header from './components/Header';
+import Read from './components/Read'; 
 import Content from './components/Content';
-import Footer from './components/Footer';
+import Create from './components/Create';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -28,8 +28,8 @@ function App() {
       </Navbar>
       <Routes>
         <Route path='/' element={<Content></Content>}></Route> 
-        <Route path='/read' element={<Header></Header>}></Route> 
-        <Route path='/create' element={<Footer></Footer>}></Route> 
+        <Route path='/read' element={<Read></Read>}></Route> 
+        <Route path='/create' element={<Create></Create>}></Route> 
       </Routes>
      
 
