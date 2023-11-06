@@ -8,11 +8,11 @@ function Read() {
     // UseEffect is a react hook that will allow you to sync your component with an external system
     useEffect(() => {
         //Axios will make a http request that has the get method for the following URL 
-        axios.get('https://jsonblob.com/api/jsonblob/1161593332966481920')
+        axios.get('http://localhost:4000/api/books')
             .then( //This is the call back function when the asynchronous function is ocmpleted this is function that is executed 
                 (response) => {
                     //setData will update the value of data with the response that came back from the server 
-                    setData(response.data.books)
+                    setData(response.data.myBooks)
                 }
             )
             .catch(
